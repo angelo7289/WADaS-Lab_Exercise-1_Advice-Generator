@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    
+    --advice-background: #48717e3e;
+    --green: #52ffa9d9;
+    --text: hsla(193, 38%, 86%, 0.826);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+html, body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 0px;
+}
+
+body{
+    background-color: #1f2331;
+}
+
+
+advice-container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--advice-background);
+    max-width: 550px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto 20px;
+}
+
+.advice-id{
+    color: var(--green);
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
+
+.advice-text{
+    margin: 20px auto 0; 
+    font-size: 28px;
+    width: 100%;
+    color: var(--text);
+}
+
+
+
+.divider{
+    margin: 20px 0 30px;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+
+
+#dice{
+    background-color: var(--green);
+    border-radius: 50%;
+    padding: 15px 16px 12px;
+    border: 0;
+    cursor: pointer;
+    margin: 0 auto -50px;
+}
+#dice img{
+    width: 23px;
+}
+#dice:hover {
+    box-shadow: 0 0 40px var(--green);
+}
+
+
+.attribution { 
+    font-size: 0.8rem; 
+    align-self: flex-end;
+    text-align: center;
+    background-color: var(--advice-background);
+    padding: 10px;
+    color: var(--text);
+} 
+.attribution a { 
+    color: var(--green); 
+}
+
+@media (min-width: 530px) {
+    advice-container{
+        margin: auto;
+    }
+}
